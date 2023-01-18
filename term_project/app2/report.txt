@@ -1,0 +1,18 @@
+Big O Runtimes (Worst Case/only required functions):
+
+createDataSet - O(n)
+
+destroyDataSet - O(n)
+
+searchID - O(n)
+
+insertion - O(n)
+
+deletion - O(n)
+
+While these worst case situations are O(n), with a hash table you are typically expecting a O(1) case.
+Meaning, that on average you are typically looking at a O(1) case across the board, and in a situation 
+where you need to search frequently O(1), even if only on average, is the best possible case you could get.
+While certain binary trees and a sorted array do have a faster worst case complexity, their average/expected case
+and their best cases are simply not as quick. Typically, when evaluating you would want to look at your average
+and worst cases. Therefore, the hash table seemed like the best far and away.  

@@ -1,0 +1,20 @@
+Big O Runtimes (Worst Case/only required functions):
+
+createDataSet - O(n)
+
+destroyDataSet - O(n)
+
+searchID - O(1)
+
+insertion - O(1)
+
+deletion - O(n)
+
+maxAgeGap - O(n)
+
+Similar to the rationale I provided in Application 2, the Hash Table is the best ADT for this application.
+Due to its relatively low worst case complexity and extremely fast average case, the hash table is the best choice.
+However, because this application sorts by age rather than id, and age is not unique like id in the sense that
+multiple people can share the same age, it was necessary to implement Hash Table Chaining so that each hash value
+pointed to an age from 18-30 which would then point to a respective linked list storing all the ids of people with
+a specific age. In this way, I could continue to reap the benefits of the hash table and also maintain sorted lists.
